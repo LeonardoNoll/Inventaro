@@ -1,0 +1,302 @@
+:root {
+/*Typography stuff*/
+  font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", "Helvetica",    "Arial", sans-serif;
+  font-family: "Roboto Condensed", sans-serif;
+/*Miscellaneous*/
+  --fontTitulo: 2.5rem;
+  --fontGrande: 1.2rem;
+}
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400&display=swap");
+html {
+/*Box model stuff*/
+  height: 100vh;
+/*Miscellaneous*/
+  box-sizing: border-box;
+}
+
+body {
+/*Positioning stuff*/
+  position: relative;
+/*Box model stuff*/
+  min-height: 100%;
+  margin: 0;
+  padding-bottom: 6.74rem;
+/*Miscellaneous*/
+  /* overflow-x: hidden; */
+  box-sizing: inherit;
+}
+
+input[type="search"] {
+/*Box model stuff*/
+  padding: 3px 5px;
+  border: 2px solid black;
+  border-radius: 15px;
+/*Typography stuff*/
+  font-size: 0.9em;
+}
+
+input[type="search"]:focus {
+/*Box model stuff*/
+  border: 2px solid black;
+}
+
+nav {
+/*Display stuff*/
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+/*Positioning stuff*/
+  position: sticky;
+  top: 0;
+  z-index: 2;
+/*Box model stuff*/
+  width: 100%;
+  height: 35px;
+  background: white;
+/*Miscellaneous*/
+  box-shadow: black 5px 0 8px;
+}
+
+nav img {
+/*Box model stuff*/
+  width: 100%;
+  max-width: 25px;
+}
+
+#titleInventaro {
+/*Display stuff*/
+  display: flex;
+  align-items: center;
+  justify-content: center;
+/*Box model stuff*/
+  width: 90%;
+  min-width: fit-content;
+  height: 120px;
+  margin-left: 50%;
+  margin-top: 30px;
+  border-radius: 5px;
+  background: #010101;
+/*Typography stuff*/
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: var(--fontTitulo);
+  text-shadow: rgba(255, 255, 255, 0.692) 0 0px 3px;
+  color: rgb(236, 236, 236);
+/*Manipulations stuff*/
+  transform: translateX(-50%);
+/*Miscellaneous*/
+  box-shadow: #010101 0 3px 5px;
+}
+
+#globo1 {
+/*Box model stuff*/
+  height: 38px;
+  border-radius: 50%;
+  background: rgb(255, 255, 255);
+/*Manipulations stuff*/
+  transform: translate(3px, -1px);
+}
+
+main {
+/*Box model stuff*/
+  width: 100%;
+  height: fit-content;
+  margin-top: 80px;
+/*Miscellaneous*/
+  /* border: solid; */
+}
+
+.profile {
+/*Display stuff*/
+  display: flex;
+/*Box model stuff*/
+  width: 70%;
+  height: 90px;
+  margin: 35px auto;
+  border-radius: 20px;
+/*Miscellaneous*/
+  box-shadow: rgb(168, 168, 168) 0 0 15px;
+  overflow: hidden;
+}
+
+.profile:hover{
+  cursor: pointer;
+}
+
+.profileLeftWrapper {
+/*Display stuff*/
+  display: flex;
+  align-items: center;
+  justify-content: center;
+/*Box model stuff*/
+  width: 90px;
+}
+
+.profileRightWrapper {
+/*Display stuff*/
+  display: flex;
+  align-items: center;
+  justify-content: center;
+/*Box model stuff*/
+  width: calc(100% - 90px);
+  padding: 3px;
+  background: rgba(179, 179, 179, 0.23);
+/*Typography stuff*/
+  font-size: 1.5em;
+  font-weight: 600;
+  text-align: center;
+/*Miscellaneous*/
+  line-height: normal;
+}
+
+footer {
+/*Display stuff*/
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+/*Positioning stuff*/
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+/*Manipulations stuff*/
+  transform: translateY(-50%);
+/*Miscellaneous*/
+  /* padding: 20px; */
+  /* height: 50px; */
+  /* border: solid; */
+}
+
+#waterMark {
+/*Box model stuff*/
+  margin-bottom: 10px;
+}
+
+.pageTitle {
+/*Display stuff*/
+  display: flex;
+  align-items: center;
+  justify-content: center;
+/*Box model stuff*/
+  width: 75%;
+  min-width: fit-content;
+  height: 100px;
+  margin: 30px auto auto auto;
+  border: solid 2px rgb(204, 204, 204);
+  box-shadow: rgb(204, 204, 204) 0px 3px 0;
+  border-radius: 10px;
+/*Typography stuff*/
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: var(--fontTitulo);
+}
+
+#listCategorias{
+/*Display stuff*/
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+/*Box model stuff*/
+  width: 90%;
+  margin: auto auto auto auto;
+  padding: 10px 0;
+  border: solid 2px black;
+  border-radius: 10px;
+/*Miscellaneous*/
+  /* height: 200px; */
+  box-shadow: #010101 3px 4px 0;
+  list-style: disc;
+}
+
+#listCategorias li{
+/*Box model stuff*/
+  margin: 10px 30px;
+  margin-left: 30px;
+  margin-right: 30px;
+  margin-top: 10px;
+  padding: 5px 9px;
+  border:none;
+  border-radius: 5px;
+  background:rgba(232, 232, 232, 0.651);
+/*Typography stuff*/
+  font-size: var(--fontGrande);
+}
+
+#listCategorias li:hover{
+  background:rgb(225, 225, 225);
+  cursor: pointer;
+}
+
+.itensWrapper{
+  /*Display stuff*/
+  display: flex;
+/*Box model stuff*/
+  width: 70%;
+  height: 90px;
+  margin: 35px auto;
+  border-radius: 20px;
+/*Miscellaneous*/
+  box-shadow: rgb(168, 168, 168) 0 0 15px;
+  overflow: hidden;
+}
+
+.itensWrapperLeft{
+/*Display stuff*/
+  display: flex;
+  align-items: center;
+  justify-content: center;
+/*Box model stuff*/
+  width: 50%;
+  height: 100%;
+/*Miscellaneous*/
+position: inherit;
+  /* border: #010101 solid; */
+}
+
+.itensWrapperRight{
+/*Box model stuff*/
+  width: 50%;
+  height: 100%;
+  background: rgba(179, 179, 179, 0.23);
+/*Miscellaneous*/
+  /* border: #010101 solid; */
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 3fr;
+}
+
+.itemName{
+/*Typography stuff*/
+  font-size: var(--fontGrande);
+}
+
+.itemDelete{
+  /* position: absolute; */
+  /* transform: translateX(-200%); */
+}
+
+.itensButtons{
+  border: 2px black solid;
+  border-radius: 50%;
+  height: 20px;
+  width: 20px;
+  margin: auto;
+  background: white;
+  transition: 50ms;
+  padding: 3px;
+}
+
+.itensButtons:hover{
+  cursor: pointer;
+  background: rgb(211, 211, 211);
+}
+
+.itensButtons:active{
+  background: rgb(211, 211, 211);
+  transform: scale(0.9);
+}
+
+.itemNum{
+  margin: auto;
+  font-size: 2em;
+  background: white;
+  padding: 5px;
+  border-radius: 5px;
+}

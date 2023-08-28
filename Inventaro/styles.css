@@ -1,0 +1,162 @@
+:root {
+/*Typography stuff*/
+  font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", "Helvetica",    "Arial", sans-serif;
+  font-family: "Roboto Condensed", sans-serif;
+/*Miscellaneous*/
+  --fontTitulo: 2.5em;
+}
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400&display=swap");
+html {
+/*Box model stuff*/
+  height: 100vh;
+/*Miscellaneous*/
+  box-sizing: border-box;
+}
+
+body {
+/*Positioning stuff*/
+  position: relative;
+/*Box model stuff*/
+  min-height: 100%;
+  margin: 0;
+  padding-bottom: 6.74rem;
+/*Miscellaneous*/
+  /* overflow-x: hidden; */
+  box-sizing: inherit;
+}
+
+input[type="search"] {
+/*Box model stuff*/
+  padding: 3px 5px;
+  border: 2px solid black;
+  border-radius: 15px;
+/*Typography stuff*/
+  font-size: 0.9em;
+}
+
+input[type="search"]:focus {
+/*Box model stuff*/
+  border: 2px solid black;
+}
+
+nav {
+/*Display stuff*/
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+/*Box model stuff*/
+  width: 100%;
+  height: 35px;
+/*Miscellaneous*/
+  /* padding: 5px; */
+  box-shadow: black 4px 0 5px;
+}
+
+nav img {
+/*Box model stuff*/
+  width: 100%;
+  max-width: 25px;
+}
+
+article {
+/*Display stuff*/
+  display: flex;
+  align-items: center;
+  justify-content: center;
+/*Box model stuff*/
+  width: 90%;
+  height: 120px;
+  margin-left: 50%;
+  margin-top: 30px;
+  border-radius: 5px;
+  background: #010101;
+/*Typography stuff*/
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: var(--fontTitulo);
+  text-shadow: rgba(255, 255, 255, 0.692) 0 0px 5px;
+  color: rgb(236, 236, 236);
+/*Manipulations stuff*/
+  transform: translateX(-50%);
+/*Miscellaneous*/
+  box-shadow: #010101 0 3px 5px;
+}
+
+#globo1 {
+/*Box model stuff*/
+  height: 38px;
+  border-radius: 50%;
+  background: rgb(255, 255, 255);
+/*Manipulations stuff*/
+  transform: translate(3px, -1px);
+}
+
+main {
+/*Box model stuff*/
+  width: 100%;
+  height: fit-content;
+  margin-top: 80px;
+/*Miscellaneous*/
+  /* border: solid; */
+}
+
+.profile {
+/*Display stuff*/
+  display: flex;
+/*Box model stuff*/
+  width: 70%;
+  height: 90px;
+  margin: 35px auto;
+  border-radius: 20px;
+/*Miscellaneous*/
+  box-shadow: rgb(168, 168, 168) 0 0 15px;
+  overflow: hidden;
+}
+
+.profileLeftWrapper {
+/*Display stuff*/
+  display: flex;
+  align-items: center;
+  justify-content: center;
+/*Box model stuff*/
+  width: 90px;
+}
+
+.profileRightWrapper {
+/*Display stuff*/
+  display: flex;
+  align-items: center;
+  justify-content: center;
+/*Box model stuff*/
+  width: calc(100% - 90px);
+  padding: 3px;
+  background: rgba(179, 179, 179, 0.23);
+/*Typography stuff*/
+  font-size: 1.5em;
+  font-weight: 600;
+  text-align: center;
+/*Miscellaneous*/
+  line-height: normal;
+}
+
+footer {
+/*Display stuff*/
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+/*Positioning stuff*/
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+/*Manipulations stuff*/
+  transform: translateY(-50%);
+/*Miscellaneous*/
+  /* padding: 20px; */
+  /* height: 50px; */
+  /* border: solid; */
+}
+
+#waterMark {
+/*Box model stuff*/
+  margin-bottom: 10px;
+}

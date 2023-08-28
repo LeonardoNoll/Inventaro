@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inventaro</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <nav>
+        <img src="imgs/casa.png" height="25px" onclick="location.href='index.html'">
+        <img src="imgs/do-utilizador.png" height="25px">
+        <input type="search">   
+        <img src="imgs/microfone.png" height="25px">
+        <img src="imgs/mais.png" height="25px">
+        <img src="imgs/definicoes.png" height="25px">
+    </nav>
+
+    <div class="pageTitle"><h1>Categorias</h1></div>
+
+    <main>
+        <span class="itensWrapper">
+            <div class="itensWrapperLeft"> 
+                <input type="button" value="Delete" class="itemDelete">
+                <p class="itemName">Item Name</p>
+            </div>
+            <div class="itensWrapperRight">
+                <img src="imgs/minus-sign.png" class="itensButtons" onclick="changeQnt(0,1)">
+                <p class="itemNum" id="itemNum1" contentEditable >0</p>
+                <img src="imgs/plus-positive-add-mathematical-symbol.png" class="itensButtons" onclick="changeQnt(0,2)">
+                <input type="checkbox" class="itensButtons" name="" id="">
+            </div>
+        </span>
+    </main>
+
+    <footer>
+        <img src="imgs/globo 2.png" alt="globo" id="waterMark" height="30px" width="30px">
+        <p>Copyright &copy; <script>document.write(new Date().getFullYear())</script></p>
+    </footer> 
+    <script src="js/categoria.js"></script>       
+    </body>
+    </html>
