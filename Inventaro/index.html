@@ -12,7 +12,7 @@
         <h1>INVENTAR</h1>
         <img src="imgs/globo 3.png" 40px id="globo1">
     </article>
-    <main>
+    <main id="indexMain"> 
         <span class="profile" onclick="location.href='perfil.html'">
             <div class="profileLeftWrapper">
                 <img src="imgs/do-utilizador.png" height="45px" alt="Imagem e usuário padrão">
@@ -35,17 +35,18 @@
             <div class="profileLeftWrapper">
                 <img src="imgs/do-utilizador.png" height="45px" alt="Imagem e usuário padrão">
             </div>
-            <div class="profileRightWrapper">
+            <div class="profileRightWrapper" onclick="addProfile()">
                 <h1>Adicionar Perfil</h1>
             </div>
         </span>
 
-        <img src="imgs/plus-positive-add-mathematical-symbol.png">
         
     </main>
     <footer>
         <img src="imgs/globo 2.png" alt="globo" id="waterMark" height="30px" width="30px">
         <p>Copyright &copy; <script>document.write(new Date().getFullYear())</script></p>
     </footer>
+
+    <script src="js/index.js"></script>
 </body>
 </html>
