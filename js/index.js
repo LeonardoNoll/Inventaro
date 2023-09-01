@@ -1,4 +1,4 @@
-const main = querySelector("#indexMain");
+let main = document.querySelector("main");
 
 function addProfile() {
     // alert("Digite o nome do perfil!");
@@ -7,14 +7,17 @@ function addProfile() {
   if (profileName == null) {
     alert("Digite o nome do perfil!");
   } else {
-    let profile = document.createElement("div");
+    let profile = document.createElement("span");
     profile.classList.add("profile");
-    profile.innerHTML = `<div class="profileLeftWrapper">
-        <img src="imgs/do-utilizador.png" height="45px" alt="Imagem e usuário padrão">
-    </div>
-    <div class="profileRightWrapper">
-        <h1>` + profileName + `</h1>
-    </div>`;
+    let left = document.querySelector('#leftBase').cloneNode(true);
+    let right = document.createElement("div");
+    right.classList.add("profileRightWrapper");
+    let name = document.createElement("h1");
+    name.innerText = profileName;
+
+    right.appendChild(name);
+    profile.appendChild(left);
+    profile.appendChild(right);
     main.appendChild(profile);
   }
 }
