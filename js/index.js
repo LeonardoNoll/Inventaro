@@ -4,7 +4,7 @@ function addProfile() {
     // alert("Digite o nome do perfil!");
   let profileName = window.prompt("Digite o nome do perfil:");
 
-  if (profileName == null) {
+  if (profileName.length == 0) {
     alert("Digite o nome do perfil!");
   } else {
     let profile = document.createElement("span");
@@ -18,8 +18,7 @@ function addProfile() {
     right.appendChild(name);
     profile.appendChild(left);
     profile.appendChild(right);
-    main.appendChild(profile);
+    main.insertBefore(profile,document.querySelector("#addProfile"));
   }
 }
 
-//TODO - Revisar a função de adicionar perfil, expecificamente document.createElement("div");
