@@ -8,6 +8,7 @@
   --fontGrande: 1.2rem;
 }
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300&family=Roboto+Condensed:wght@300;400&display=swap');
 html {
   /*Box model stuff*/
   height: 100vh;
@@ -145,6 +146,7 @@ main {
   font-size: 1.5em;
   font-weight: 600;
   text-align: center;
+  word-break: break-word;
   /*Miscellaneous*/
   line-height: normal;
 }
@@ -182,7 +184,7 @@ footer {
   min-width: fit-content;
   height: 100px;
   margin: 30px auto auto auto;
-  border: solid 2px rgb(204, 204, 204);
+  border: solid 2px rgb(0, 0, 0);
   box-shadow: rgb(204, 204, 204) 0px 3px 0;
   border-radius: 10px;
   /*Typography stuff*/
@@ -241,14 +243,14 @@ footer {
 
 .itensWrapperLeft {
   /*Display stuff*/
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  /* display: flex; */
+  /* align-items: center; */
+  /* justify-content: center; */
   /*Box model stuff*/
   width: 50%;
   height: 100%;
   /*Miscellaneous*/
-  position: inherit;
+  position: relative;
   /* border: #010101 solid; */
 }
 
@@ -260,12 +262,22 @@ footer {
   /*Miscellaneous*/
   /* border: #010101 solid; */
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 3fr;
+  grid-template-columns: 1fr 1fr 1fr ;
+  /* position: relative; */
 }
 
 .itemName {
   /*Typography stuff*/
   font-size: var(--fontGrande);
+  font-weight: 600;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  /* margin: auto auto auto 10%; */
+  /* border: solid; */
+  max-width: 75%;
+  word-break: break-word;; 
 }
 
 .itemDelete {
@@ -273,6 +285,20 @@ footer {
   /* transform: translateX(-200%); */
   height: 20px;
   margin-right: 30%;
+  position: absolute;
+  left: 7%;
+  top: 50%;
+  transform: translateY(-40%);
+  font-family: 'Nunito', sans-serif;
+  /* font-family: 'Roboto Condensed', sans-serif;   */
+  font-size: 17px;
+  font-weight: 600;
+  transition: 200ms;
+}
+
+.itemDelete:hover {
+  cursor: pointer;
+  color: rgb(255, 0, 0);
 }
 
 .itensButtons {
