@@ -271,6 +271,8 @@ footer {
 .itemDelete {
   /* position: absolute; */
   /* transform: translateX(-200%); */
+  height: 20px;
+  margin-right: 30%;
 }
 
 .itensButtons {
@@ -300,5 +302,18 @@ footer {
   background: white;
   padding: 5px;
   border-radius: 5px;
+}
+
+.plusButton{
+  height: 50px;
+  margin: 20px auto auto 50%;
+  transform: translateX(-50%);
+  transition: 200ms;
+}
+
+.plusButton:hover{
+  height: 60px;
+ transform: translateX(-50%);
+ margin-top: 15px;
 }
 
