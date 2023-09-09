@@ -9,6 +9,7 @@ function addProfile() {
   } else {
     let profile = document.createElement("span");
     profile.classList.add("profile");
+    profile.addEventListener("click", function () {location.href = "categoria.html";});
     let left = document.querySelector('#leftBase').cloneNode(true);
     let right = document.createElement("div");
     right.classList.add("profileRightWrapper");
