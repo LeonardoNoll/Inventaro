@@ -346,3 +346,54 @@ footer {
 #adicionarPerfil{
   transition: 500ms;
 }
+
+#loginWrapper{
+  box-sizing: border-box;
+  margin: auto;
+  height: 300px;
+  display: inline-block;
+  width: 300px;
+  border-radius: 10px;
+  background: white;
+  box-shadow: rgb(168, 168, 168) 0 0 15px;
+}
+
+#loginBtn, #registerBtn{
+  transition: 200ms;
+  height: 50px;
+  width: 200px;
+  margin: 15px auto;
+  border-radius: 10px;
+  border: solid 2px #505050;
+  box-shadow: 0 0 5px gray;
+}
+
+#loginBtn{
+  background: #010101;
+  color: white;
+  font-weight: bold;
+}
+
+#loginBtn:hover, #loginBtn:focus{ 
+  cursor: pointer;
+  border: solid 2px white;
+  box-shadow: 0 0 10px gray;
+}
+
+#registerBtn{
+  background: white;
+  color: #010101;
+  border: solid 2px #505050;
+  font-weight: bold;
+}
+
+#registerBtn:hover, #registerBtn:focus{ 
+  cursor: pointer;
+  box-shadow: 0 0 10px gray;
+  border: solid 2px #010101;
+}
+
+#loginWrapper h1{
+  margin: 10px auto auto auto;
+  font-weight: bolder;
+}
