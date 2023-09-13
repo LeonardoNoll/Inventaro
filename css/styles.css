@@ -344,4 +344,5 @@ footer {
 }
 
 #adicionarPerfil{
+  transition: 500ms;
 }

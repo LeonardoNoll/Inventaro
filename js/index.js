@@ -20,6 +20,8 @@ function addProfile() {
     profile.appendChild(left);
     profile.appendChild(right);
     main.insertBefore(profile,document.querySelector("#addProfile"));
+
+    document.querySelector("#addProfile").style. = "none";
   }
 }
 
