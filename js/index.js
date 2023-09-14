@@ -21,7 +21,12 @@ function addProfile() {
     profile.appendChild(right);
     main.insertBefore(profile,document.querySelector("#addProfile"));
 
-    document.querySelector("#addProfile").style. = "none";
+    document.querySelector("#addProfile").style = "none";
   }
+}
+
+function modalLogin(){
+  let modalLogin = document.querySelector("#modalLogin");
+  modalLogin.showModal();
 }
 

@@ -32,8 +32,16 @@
         </span> -->
         <div id="loginWrapper">
             <h1>Bem-Vindo!</h1>
-            <input type="button" value="Acessar Conta" id="loginBtn" onclick="">
-            <input type="button" value="Resgistrar Conta" id="registerBtn" onclick="">
+            <h2>Entre ou crie uma conta para começar</h2>
+            <input type="button" value="Acessar Conta" id="loginBtn" onclick="modalLogin()">
+            <dialog id="modalLogin">
+                <form>
+                    <input type="text" name="user" id="user" placeholder="Usuário" required>
+                    <input type="password" name="password" id="password" placeholder="Senha" required>
+                    <input type="submit" value="Entrar">
+                </form>
+            </dialog>
+            <input type="button" value="Resgistrar Conta" id="registerBtn" onclick="location.href='perfil.html'">
         </div>
         
     </main>

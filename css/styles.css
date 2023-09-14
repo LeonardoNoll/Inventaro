@@ -351,8 +351,9 @@ footer {
   box-sizing: border-box;
   margin: auto;
   height: 300px;
-  display: inline-block;
   width: 300px;
+  padding: 1px;
+  display: block;
   border-radius: 10px;
   background: white;
   box-shadow: rgb(168, 168, 168) 0 0 15px;
@@ -362,7 +363,8 @@ footer {
   transition: 200ms;
   height: 50px;
   width: 200px;
-  margin: 15px auto;
+  display: block;
+  margin: 30px auto;
   border-radius: 10px;
   border: solid 2px #505050;
   box-shadow: 0 0 5px gray;
@@ -394,6 +396,48 @@ footer {
 }
 
 #loginWrapper h1{
-  margin: 10px auto auto auto;
+  margin: 30px auto 10px auto;
+  display: block;
+  /* border: solid 2px #010101; */
   font-weight: bolder;
+  font-size: var(--fontGrande);
+  text-align: center;
+}
+
+#loginWrapper h2{
+  margin: 10px auto 50px auto;
+  display: block;
+  /* border: solid 2px #010101; */
+  font-weight: bold;
+  text-align: center;
+}
+
+#modalLogin{
+  background: white;
+  border-radius: 10px;
+  width: 200px;
+  height: 200px;
+  border: none;
+  box-shadow: rgb(168, 168, 168) 0 0 15px;
+}
+
+#modalLogin input[type= "text"], #modalLogin input[type= "password"]{
+  margin: 20px auto;
+  display: block;
+  font-size: 1em;
+  padding: 4px;
+  border-radius: 5px;
+  border: #010101 solid 1px;
+}
+
+#modalLogin input[type= "submit"]{
+  margin: 20px auto;
+  display: block;
+  font-size: 1em;
+  padding: 6px;
+  border-radius: 5px;
+  border: #010101 solid 1px;
+  background: #010101;
+  color: white;
+  font-weight: bold;
 }
