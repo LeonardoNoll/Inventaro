@@ -415,19 +415,37 @@ footer {
 #modalLogin{
   background: white;
   border-radius: 10px;
-  width: 200px;
-  height: 200px;
+  max-width: 350px;
+  width: 80%;
+  /* height: 350px; */
   border: none;
   box-shadow: rgb(168, 168, 168) 0 0 15px;
 }
 
+#closeModalLogin{
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  height: 20px;
+  width: 20px;
+}
+
 #modalLogin input[type= "text"], #modalLogin input[type= "password"]{
-  margin: 20px auto;
+  margin: 0px auto;
   display: block;
   font-size: 1em;
   padding: 4px;
   border-radius: 5px;
-  border: #010101 solid 1px;
+  border: #010101 solid 2px;
+  height: 30px;
+  width: 90%;
+}
+
+#esqueciSenha{
+  color: #010101;
+  font-size: 0.8em;
+  display: block;
+  margin: 3px auto 0 10px;
 }
 
 #modalLogin input[type= "submit"]{
@@ -440,4 +458,16 @@ footer {
   background: #010101;
   color: white;
   font-weight: bold;
+}
+
+#modalLogin label{
+  display: block;
+  /* position: inherit; */
+  /* margin: 10px auto; */
+  font-size: 1em;
+  font-weight: bold;
+  width: fit-content;
+  background: white;
+  /* border: solid; */
+  margin: 40px auto 0px 20px;
 }

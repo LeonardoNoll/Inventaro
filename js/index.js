@@ -30,3 +30,7 @@ function modalLogin(){
   modalLogin.showModal();
 }
 
+function closeModalLogin(){
+  let modalLogin = document.querySelector("#modalLogin");
+  modalLogin.close();
+}

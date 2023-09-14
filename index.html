@@ -35,9 +35,13 @@
             <h2>Entre ou crie uma conta para começar</h2>
             <input type="button" value="Acessar Conta" id="loginBtn" onclick="modalLogin()">
             <dialog id="modalLogin">
+                <img src="imgs/cancel.png" alt="fechar" onclick="closeModalLogin()" id="closeModalLogin" height="10px">
                 <form>
+                    <label for="user">Usuário</label>
                     <input type="text" name="user" id="user" placeholder="Usuário" required>
+                    <label for="password">Senha</label>
                     <input type="password" name="password" id="password" placeholder="Senha" required>
+                    <a href="" id="esqueciSenha">Esqueceu a senha?</a>
                     <input type="submit" value="Entrar">
                 </form>
             </dialog>
